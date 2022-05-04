@@ -1,0 +1,620 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Roboto:wght@100;300;400&display=swap");
+html {
+  overflow: auto;
+}
+
+body {
+  background: #1c1c1c;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  /* Chrome, Edge, and Safari */
+}
+
+body * {
+  scrollbar-width: auto;
+  scrollbar-color: #653aab #ffffff;
+}
+
+body *::-webkit-scrollbar {
+  width: 16px;
+}
+
+body *::-webkit-scrollbar-track {
+  background: #43178b;
+}
+
+body *::-webkit-scrollbar-thumb {
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  border: 3px solid #1c1c1c;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body .navbar {
+  width: 5rem;
+  height: 100vh;
+  position: fixed;
+  background-color: #141414;
+  -webkit-transition: width 200ms ease;
+  transition: width 200ms ease;
+}
+
+body .navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+body .nav-item {
+  margin: 0.3rem;
+}
+
+body .nav-link {
+  font-family: Quicksand, sans-serif;
+  font-weight: lighter;
+  color: #ffffff;
+  text-decoration: none !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 2rem;
+}
+
+body .link-text {
+  font-size: 2rem;
+  display: none;
+}
+
+body .nav-link svg {
+  color: #653aab;
+  min-width: 1.6rem;
+}
+
+body .navbar:hover {
+  width: 15rem;
+}
+
+body .navbar:hover .link-text {
+  margin-left: 1rem;
+  display: block;
+}
+
+body .contact-btn {
+  width: 280px;
+  height: 73px;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-size: 33px;
+  color: #653aab;
+  background: #1c1c1c;
+  border: 4px solid #653aab;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+body .container {
+  width: 100%;
+  height: 100%;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+body .container .navbar:hover .centered-el {
+  margin-left: 10rem;
+}
+
+body .container section {
+  margin-left: 8rem;
+  color: #ffffff;
+  width: 87vw;
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+body .container section:nth-of-type(1) {
+  width: 100vw;
+  height: 100vh;
+}
+
+@-webkit-keyframes myAnim {
+  0%,
+  50% {
+    background: linear-gradient(27deg, #1c1c1c 0%, #1c1c1c 49%, #43168c 85%);
+  }
+  100% {
+    background: linear-gradient(8deg, #1c1c1c 0%, #1c1c1c 49%, #43168c 85%);
+  }
+  25%,
+  75% {
+    background: linear-gradient(351deg, #1c1c1c 0%, #1c1c1c 49%, #43168c 85%);
+  }
+}
+
+@keyframes myAnim {
+  0%,
+  50% {
+    background: linear-gradient(27deg, #1c1c1c 0%, #1c1c1c 49%, #43168c 85%);
+  }
+  100% {
+    background: linear-gradient(8deg, #1c1c1c 0%, #1c1c1c 49%, #43168c 85%);
+  }
+  25%,
+  75% {
+    background: linear-gradient(351deg, #1c1c1c 0%, #1c1c1c 49%, #43168c 85%);
+  }
+}
+
+body .container section:nth-of-type(2) {
+  width: 100vw;
+  height: 100vh;
+  background: #1c1c1c;
+}
+
+body .container section:nth-of-type(3) {
+  width: 100vw;
+  height: 100vh;
+  background: #1c1c1c;
+}
+
+body .container section:nth-of-type(4) {
+  width: 100vw;
+  height: 100vh;
+  background: #1c1c1c;
+}
+
+body .container .page-one {
+  background: linear-gradient(68deg, #1c1c1c 0%, #1c1c1c 49%, #43168c 85%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 4rem;
+  line-height: 4rem;
+  height: 100vh;
+}
+
+body .container .page-one div {
+  margin-left: 8rem;
+}
+
+body .container .page-one .git-icon {
+  position: absolute;
+  margin-top: 2rem;
+  margin-right: 2.5rem;
+  top: 0;
+  right: 0;
+}
+
+body .container .page-one .linkedin-icon {
+  position: absolute;
+  margin-top: 2rem;
+  margin-right: 6.5rem;
+  top: 0;
+  right: 0;
+}
+
+body .container .page-one h1 {
+  font-family: "Quicksand";
+  font-style: bold;
+  font-weight: 700;
+  font-size: 100px;
+  color: #ffffff;
+  line-height: 6rem;
+  margin-bottom: 0;
+}
+
+body .container .page-one p {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  color: #a2a2a2;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+body .container .page-one button {
+  margin: 0;
+}
+
+body .container .page-two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 4rem;
+  height: 100vh;
+}
+
+body .container .page-two .left-content {
+  margin-left: 8rem;
+}
+
+body .container .page-two h1 {
+  font-family: "Quicksand";
+  font-style: bold;
+  font-weight: 700;
+  font-size: 100px;
+  margin: 0;
+  padding: 0;
+}
+
+body .container .page-two p {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  color: #a2a2a2;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+body .container .page-two h2 {
+  font-family: "Quicksand";
+  font-style: bold;
+  font-weight: 700;
+  font-size: 43px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+body .container .page-two .right-list {
+  list-style: none;
+  list-style-position: inside;
+  font-family: "Quicksand";
+  font-weight: normal;
+  font-size: 37px;
+  margin: 0;
+  padding: 0;
+}
+
+body .container .page-two .right-list svg {
+  margin-right: 1rem;
+  color: #653aab;
+  height: 25px;
+  width: 25px;
+}
+
+body .container .page-two #leftUl {
+  list-style: none;
+  list-style-position: inside;
+  font-family: "Quicksand";
+  font-weight: normal;
+  font-size: 25px;
+  color: #a2a2a2;
+  margin: 0;
+  padding: 0;
+}
+
+body .container .page-two li {
+  margin-bottom: 0.8rem;
+}
+
+body .container .page-two .another-right-content {
+  margin-left: 12rem;
+}
+
+body .container .page-two .right-content {
+  display: -ms-grid;
+  display: grid;
+  margin-left: 9rem;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .page-two .skills-bar {
+  width: 600px;
+  background: #1c1c1c;
+  border-radius: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 25px 30px;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+body .container .page-two .skills-bar .bar {
+  margin: 22px 0;
+}
+
+body .container .page-two .skills-bar .bar:first-child {
+  margin-top: 0;
+}
+
+body .container .page-two .skills-bar .bar .info {
+  margin-bottom: 5px;
+}
+
+body .container .page-two .skills-bar .bar .info span {
+  font-family: "Quicksand";
+  font-size: 25px;
+  font-weight: 500;
+}
+
+body .container .page-two .skills-bar .bar .progress-line {
+  position: relative;
+  height: 6px;
+  width: 100%;
+  background: #000000;
+  border-radius: 10px;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-animation: animate 3.5s cubic-bezier(1, 0, 0.5, 1) forwards;
+          animation: animate 3.5s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+body .container .page-two .bar .progress-line span {
+  font-family: "Quicksand";
+  height: 100%;
+  width: 100%;
+  background: #653aab;
+  position: absolute;
+  border-radius: 10px;
+}
+
+@-webkit-keyframes animate {
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+@keyframes animate {
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+body .container .page-two .bar .progress-line.html span {
+  height: 6px;
+  width: 72%;
+}
+
+body .container .page-two .bar .progress-line.css span {
+  height: 6px;
+  width: 60%;
+}
+
+body .container .page-two .bar .progress-line.js span {
+  height: 6px;
+  width: 80%;
+}
+
+body .container .page-two .bar .progress-line.ts span {
+  height: 6px;
+  width: 70%;
+}
+
+body .container .page-two .bar .progress-line.react span {
+  height: 6px;
+  width: 35%;
+}
+
+body .container .page-two .bar .progress-line.sql span {
+  height: 6px;
+  width: 45%;
+}
+
+body .container .page-two .bar .progress-line span::before {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: -12px;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+}
+
+body .container .page-two .bar .progress-line span::after {
+  position: absolute;
+  right: 0;
+  top: -28px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  background: #000;
+  padding: 1px 8px;
+  border-radius: 5px;
+}
+
+body .container .page-two .bar .progress-line.html span::after {
+  content: "72%";
+}
+
+body .container .page-two .bar .progress-line.css span::after {
+  content: "60%";
+}
+
+body .container .page-two .bar .progress-line.js span::after {
+  content: "80%";
+}
+
+body .container .page-two .bar .progress-line.ts span::after {
+  content: "70%";
+}
+
+body .container .page-two .bar .progress-line.react span::after {
+  content: "35%";
+}
+
+body .container .page-two .bar .progress-line.sql span::after {
+  content: "45%";
+}
+
+body .container .page-three {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 4rem;
+  height: 100vh;
+}
+
+body .container .page-three h1 {
+  font-family: "Quicksand";
+  font-style: bold;
+  font-weight: 700;
+  font-size: 100px;
+  margin: 0;
+  margin-bottom: 2rem;
+  padding: 0;
+}
+
+body .container .page-three span {
+  margin-left: 7px;
+  margin-right: 7rem;
+  font-family: "Quicksand";
+  font-size: 25px;
+  font-weight: 500;
+}
+
+body .container .page-three .rps {
+  margin-left: 3.5rem;
+}
+
+body .container .page-three .page-three-margin {
+  margin-left: 8rem;
+}
+
+body .container .page-three .projects-container svg {
+  margin-right: 3rem;
+  margin-top: 1.5rem;
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: #2f2f2f;
+}
+
+body .container .page-four {
+  font-family: "Quicksand";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 4rem;
+  height: 100vh;
+  margin-bottom: 5rem;
+}
+
+body .container .page-four h2 {
+  font-weight: lighter;
+  font-size: 25px;
+  margin: 5px;
+}
+
+body .container .page-four .right-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 4rem;
+}
+
+body .container .page-four .right-content svg {
+  width: 35px;
+  height: 35px;
+  margin-right: 0.8rem;
+}
+
+body .container .page-four .left-content {
+  margin-left: 8rem;
+}
+
+body .container .page-four h1 {
+  font-style: bold;
+  font-weight: 700;
+  font-size: 100px;
+  margin: 0;
+  padding: 0;
+}
+
+body .container .page-four p {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  color: #a2a2a2;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+body .container .page-four form {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 18px;
+}
+
+body .container .page-four #messageInput {
+  width: 600px;
+  height: 100px;
+}
+
+body .container .page-four button {
+  margin-left: 9rem;
+}
+
+body .container .page-four input {
+  font-weight: lighter;
+  font-style: lighter;
+  color: #ffffff;
+  background-color: #2f2f2f;
+  font-size: 25px;
+  padding: 1rem;
+  border: 0;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=style.css.map */
